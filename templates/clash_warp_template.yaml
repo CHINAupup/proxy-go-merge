@@ -41,7 +41,6 @@ proxies:
     dialer-proxy: "WARP前置节点"
 
 #这里是chromego-merge节点变量，终点
-
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -51,26 +50,6 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
-
   - name: WARP前置节点
     type: select
     proxies:
@@ -79,25 +58,6 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
 
   - name: ♻️ 自动选择
     type: url-test
@@ -106,50 +66,12 @@ proxy-groups:
     proxies:
 
 
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
-
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 600
     proxies:
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
+
 
   - name: 🔮 负载均衡
     type: load-balance
@@ -158,25 +80,6 @@ proxy-groups:
     interval: 600
     proxies:
 
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
 
   - name: ⛔️ 广告拦截
     type: select
@@ -198,25 +101,7 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
+
 
   - name: 🌏 国内媒体
     type: select
@@ -226,25 +111,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
+
 
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -255,25 +122,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
+
 
   - name: 📲 电报信息
     type: select
@@ -283,25 +132,7 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
+
 
   - name: 🎥 NETFLIX
     type: select
@@ -311,25 +142,7 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
+
 
   - name: 🍎 苹果服务
     type: select
@@ -339,25 +152,7 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
+
 
   - name: 🎯 全球直连
     type: select
@@ -376,25 +171,7 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-      - meta_hysteria2_01
-      - meta_hysteria2_02
-      - meta_tuic_11
-      - meta_tuic_21
-      - meta_tuic_31
-      - meta_hysteria_41
-      - meta_tuic_51
-      - meta_tuic_61
-      - meta_hysteria_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_2
-      - hysteria2_3
+
 
 rules:
     #规则的用法解释
