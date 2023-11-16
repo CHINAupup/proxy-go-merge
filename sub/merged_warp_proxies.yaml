@@ -210,6 +210,22 @@ proxies:
   alpn:
   - h3
 proxy-groups:
+- name: 手动选择
+  type: select
+  proxies:
+  - meta_tuic_11
+  - meta_tuic_21
+  - meta_tuic_31
+  - meta_hysteria_41
+  - meta_tuic_51
+  - meta_tuic_61
+  - meta_hysteria_71
+  - meta_hysteria_81
+  - meta_hysteria_91
+  - hysteria_0
+  - hysteria_1
+  - hysteria_2
+  - hysteria_3
 - name: 🔰 节点选择
   type: select
   proxies:
@@ -221,7 +237,6 @@ proxy-groups:
 - name: WARP前置节点
   type: select
   proxies:
-  - 🔰 节点选择
   - ♻️ 自动选择
   - 🔯 故障转移
   - 🔮 负载均衡
