@@ -34,11 +34,11 @@ https://raw.githubusercontent.com/vveg26/chromego_merge/main/sub/merged_proxies_
 
 或
 ```
-https://raw.githubusercontent.com/CHINAupup/chromego-merge/main/sub/merged_proxies.yaml
+https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_proxies.yaml
 ```
 含Hysteria2节点
 ```
-https://raw.githubusercontent.com/CHINAupup/chromego-merge/main/sub/merged_proxies_new.yaml
+https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_proxies_new.yaml
 ```
 
 ### 套warp版本（clashmeta）
@@ -51,11 +51,11 @@ https://raw.githubusercontent.com/vveg26/chromego_merge/main/sub/merged_warp_pro
 ```
 或
 ```
-https://raw.githubusercontent.com/CHINAupup/chromego-merge/main/sub/merged_warp_proxies.yaml
+https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_warp_proxies.yaml
 ```
 含Hysteria2节点
 ```
-https://raw.githubusercontent.com/CHINAupup/chromego-merge/main/sub/merged_warp_proxies_new.yaml
+https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_warp_proxies_new.yaml
 ```
 
 ### sing-box订阅链接
@@ -64,7 +64,7 @@ https://sing-box-subscribe.vercel.app/config/https:/mareep.netlify.app/sub/merge
 ```
 或
 ```
-https://raw.githubusercontent.com/CHINAupup/chromego-merge/main/sub/sub/merged_proxies_new.yaml
+https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/sub/merged_proxies_new.yaml
 ```
 
 ## 致谢
