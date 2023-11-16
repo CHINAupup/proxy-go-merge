@@ -41,7 +41,13 @@ proxies:
     dialer-proxy: "WARP前置节点"
 
 #这里是chromego-merge节点变量，终点
+#下面这条只为获取节点name后，删除“手动选择”组。
 proxy-groups:
+  - name: 手动选择
+    type: select
+    proxies:
+
+
   - name: 🔰 节点选择
     type: select
     proxies:
