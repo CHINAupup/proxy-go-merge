@@ -40,14 +40,7 @@ proxies:
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
     dialer-proxy: "WARP前置节点"
-
-#这里是chromego-merge节点变量，终点
-#下面这条只为获取节点name后，删除“手动选择”组。
-proxy-groups:
-  - name: 手动选择
-    type: select
-    proxies:
-
+#这里是变量chromego-merge节点，终点
 
   - name: 🔰 节点选择
     type: select
@@ -57,7 +50,7 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-      #这里需要节点name
+      #节点name
       
   - name: WARP前置节点
     type: select
@@ -66,21 +59,21 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-      #这里需要节点name
+      #节点name
 
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
     proxies:
-      #这里需要节点name
+      #节点name
 
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 600
     proxies:
-      #这里需要节点name
+      #节点name
 
   - name: 🔮 负载均衡
     type: load-balance
@@ -88,7 +81,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 600
     proxies:
-      #这里需要节点name
+      #节点name
 
   - name: ⛔️ 广告拦截
     type: select
@@ -111,7 +104,6 @@ proxy-groups:
       - 🔮 负载均衡
       - 🎯 全球直连
 
-
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -120,7 +112,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-
 
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -132,7 +123,6 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
 
-
   - name: 📲 电报信息
     type: select
     proxies:
@@ -141,7 +131,6 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-
 
   - name: 🎥 NETFLIX
     type: select
@@ -152,7 +141,6 @@ proxy-groups:
       - 🔮 负载均衡
       - 🎯 全球直连
 
-
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -161,7 +149,6 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-
 
   - name: 🎯 全球直连
     type: select
@@ -180,7 +167,7 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - 🎯 全球直连
-      #这里需要节点name
+      #节点name
 
 rules:
     #规则的用法解释
