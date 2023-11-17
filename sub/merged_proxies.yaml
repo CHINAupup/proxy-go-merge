@@ -204,11 +204,13 @@ proxies:
   alpn:
   - h3
 proxy-groups:
-- name: 节点选择
+- name: 🔰 节点选择
   type: select
   proxies:
-  - 自动选择
-  - DIRECT
+  - ♻️ 自动选择
+  - 🔯 故障转移
+  - 🔮 负载均衡
+  - 🎯 全球直连
   - meta_hysteria_02
   - meta_tuic_11
   - meta_tuic_21
@@ -223,29 +225,64 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-- name: 🔰 节点选择
-  type: select
-  proxies:
-  - ♻️ 自动选择
-  - 🔯 故障转移
-  - 🔮 负载均衡
-  - 🎯 全球直连
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 600
-  proxies: null
+  proxies:
+  - meta_hysteria_02
+  - meta_tuic_11
+  - meta_tuic_21
+  - meta_tuic_31
+  - meta_hysteria_41
+  - meta_tuic_51
+  - meta_tuic_61
+  - meta_hysteria_71
+  - meta_hysteria_81
+  - meta_hysteria_91
+  - hysteria_0
+  - hysteria_1
+  - hysteria_2
+  - hysteria_3
 - name: 🔯 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 600
-  proxies: null
+  proxies:
+  - meta_hysteria_02
+  - meta_tuic_11
+  - meta_tuic_21
+  - meta_tuic_31
+  - meta_hysteria_41
+  - meta_tuic_51
+  - meta_tuic_61
+  - meta_hysteria_71
+  - meta_hysteria_81
+  - meta_hysteria_91
+  - hysteria_0
+  - hysteria_1
+  - hysteria_2
+  - hysteria_3
 - name: 🔮 负载均衡
   type: load-balance
   strategy: consistent-hashing
   url: http://www.gstatic.com/generate_204
   interval: 600
-  proxies: null
+  proxies:
+  - meta_hysteria_02
+  - meta_tuic_11
+  - meta_tuic_21
+  - meta_tuic_31
+  - meta_hysteria_41
+  - meta_tuic_51
+  - meta_tuic_61
+  - meta_hysteria_71
+  - meta_hysteria_81
+  - meta_hysteria_91
+  - hysteria_0
+  - hysteria_1
+  - hysteria_2
+  - hysteria_3
 - name: ⛔️ 广告拦截
   type: select
   proxies:
@@ -274,7 +311,6 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔯 故障转移
   - 🔮 负载均衡
-  - 🔰 节点选择
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -324,6 +360,20 @@ proxy-groups:
   - 🔯 故障转移
   - 🔮 负载均衡
   - 🎯 全球直连
+  - meta_hysteria_02
+  - meta_tuic_11
+  - meta_tuic_21
+  - meta_tuic_31
+  - meta_hysteria_41
+  - meta_tuic_51
+  - meta_tuic_61
+  - meta_hysteria_71
+  - meta_hysteria_81
+  - meta_hysteria_91
+  - hysteria_0
+  - hysteria_1
+  - hysteria_2
+  - hysteria_3
 rules:
 - DOMAIN-SUFFIX,bing.com,🔰 节点选择
 - DOMAIN-SUFFIX,steampowered.com,🔰 节点选择
