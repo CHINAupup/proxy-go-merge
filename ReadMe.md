@@ -88,7 +88,7 @@ https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_proxi
 https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_warp_proxies.yaml
 ```
 
--含Hysteria2节点
+-含Hysteria2节点，订阅名称示例：proxy-go-merge-warp-Hysteria2
 ```
 https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_warp_proxies_new.yaml
 ```
