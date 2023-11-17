@@ -40,8 +40,9 @@ proxies:
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
     dialer-proxy: "WARP前置节点"
-#这里是变量chromego-merge节点，终点
 
+#这里是变量chromego-merge节点，终点
+proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
@@ -113,7 +114,6 @@ proxies:
       - 🔯 故障转移
       - 🔮 负载均衡
 
-      - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
