@@ -1,15 +1,14 @@
-## 简介
 转自：https://github.com/vveg26/chromego_merge
 
-：
-
+---
+## 简介
 **注意：clash内核无法使用这些节点，你要用clashmeta**
 
 提取并聚合chromego中的节点，并套上warp，让你感受白嫖加隐私的快乐体验，当然普通clash无法使用这些节点，我也不喜欢被别人抓取节点到免费节点池里
 完全是面向chromego写的，所以很多地方都写死了。套上warp的原因是方便看一些chromego不让看的网址，比如p开头的x开头的
 chromego如果更新我会及时修改代码保证代码可用，如果更新不及时请提issues
 ## 为什么要套上warp
-首先chromego屏蔽了很多网站，包括你喜欢的p开头的网站，套上warp可以突破这一层限制。
+首先chromego屏蔽了很多网站，套上warp可以突破这一层限制。
 
 第二我并不喜欢使用机场等服务，原因就是机场主或者节点主完全知道你访问的网站，虽然有一层https加密，但是他们还是可以知道你访问的域名已经你连接的时间，套上warp之后，他们只能看到一串加密流量。
 
@@ -21,52 +20,90 @@ chromego如果更新我会及时修改代码保证代码可用，如果更新不
 [warp提取wireguard网站](https://replit.com/@misaka-blog/wgcf-profile-generator)
 
 [warp+机器人](https://t.me/generatewarpplusbot)
-## 订阅链接分享
 
+---
+## 订阅链接分享
 ### 不套warp版本（clashmeta）
 ```
 https://raw.githubusercontent.com/vveg26/chromego_merge/main/sub/merged_proxies.yaml
 ```
-含Hysteria2节点
+```
+https://mareep.netlify.app/sub/merged_proxies.yaml
+```
+
+-含Hysteria2节点
 ```
 https://raw.githubusercontent.com/vveg26/chromego_merge/main/sub/merged_proxies_new.yaml
 ```
-
-或
 ```
-https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_proxies.yaml
-```
-含Hysteria2节点
-```
-https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_proxies_new.yaml
+https://mareep.netlify.app/sub/merged_proxies_new.yaml
 ```
 
 ### 套warp版本（clashmeta）
 ```
 https://raw.githubusercontent.com/vveg26/chromego_merge/main/sub/merged_warp_proxies.yaml
 ```
-含Hysteria2节点
+```
+https://mareep.netlify.app/sub/merged_warp_proxies.yaml
+```
+
+-含Hysteria2节点
 ```
 https://raw.githubusercontent.com/vveg26/chromego_merge/main/sub/merged_warp_proxies_new.yaml
 ```
-或
 ```
-https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_warp_proxies.yaml
+https://mareep.netlify.app/sub/merged_warp_proxies_new.yaml
 ```
-含Hysteria2节点
+
+### 通用链接 （shadowrocket和nekoray）
 ```
-https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_warp_proxies_new.yaml
+https://raw.githubusercontent.com/vveg26/chromego_merge/main/sub/shadowrocket_base64.txt
+```
+```
+https://mareep.netlify.app/sub/shadowrocket_base64.txt
 ```
 
 ### sing-box订阅链接
 ```
+https://sing-box-subscribe.vercel.app/config/https://raw.githubusercontent.com/vveg26/chromego_merge/main/sub/merged_proxies_new.yaml
+```
+```
 https://sing-box-subscribe.vercel.app/config/https:/mareep.netlify.app/sub/merged_proxies_new.yaml
 ```
-或
+
+---
+# 来自我的项目的订阅链接
+### 不套warp版本（clashmeta）
 ```
-https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/sub/merged_proxies_new.yaml
+https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_proxies.yaml
 ```
 
+-含Hysteria2节点
+```
+https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_proxies_new.yaml
+```
+
+### 套warp版本（clashmeta）
+```
+https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_warp_proxies.yaml
+```
+
+-含Hysteria2节点
+```
+https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_warp_proxies_new.yaml
+```
+
+### 通用链接 （shadowrocket和nekoray）
+```
+https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/shadowrocket_base64.txt
+```
+
+### sing-box订阅链接
+```
+https://sing-box-subscribe.vercel.app/config/https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_proxies_new.yaml
+```
+
+---
 ## 致谢
 [ChromeGo](https://github.com/bannedbook/fanqiang/releases/tag/ChromeGo-latest)
 
