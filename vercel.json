@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "https://raw.githubusercontent.com/CHINAupup/proxy-go-merge/main/sub/merged_proxies.yaml",
-      "permanent": true
-    }
-  ]
-}
