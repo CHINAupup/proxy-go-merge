@@ -1,12 +1,10 @@
 name: Merge Script
 
 on:
-  # push:
-  #   branches:
-  #     - main  # 替换为你的默认分支
   schedule:
     - cron: '0 4 * * *'  # 每天北京时间12点执行
   workflow_dispatch:  # 触发手动事件
+
 jobs:
   merge:
     runs-on: ubuntu-latest
@@ -28,6 +26,11 @@ jobs:
 
       - name: Run shadowrocket merge script
         run: python merge.py  
+
+      - name: Check for changes
+        id: git-check
+        run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)
+
       - name: Commit Changes
         run: |
           git config core.ignorecase false
@@ -36,3 +39,4 @@ jobs:
           git add .
           git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
           git push
+        if: steps.git-check.outputs.modified == 'true'
