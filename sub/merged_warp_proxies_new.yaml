@@ -44,18 +44,7 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: meta_hysteria2_01
-  type: hysteria2
-  server: 109.104.152.219
-  port: 22998
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 100 Mbps
-  down: 100 Mbps
-- name: meta_hysteria_02
+- name: meta_hysteria_01
   type: hysteria
   server: 167.160.90.251
   port: 48089
@@ -66,6 +55,17 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
   skip-cert-verify: true
+- name: meta_hysteria2_02
+  type: hysteria2
+  server: 109.104.152.219
+  port: 22998
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 100 Mbps
+  down: 100 Mbps
 - name: meta_tuic_11
   server: tuic1.freeh1.xyz
   port: 40981
@@ -235,7 +235,7 @@ proxies:
 - name: hysteria2_0
   type: hysteria2
   server: www.dtku46.xyz
-  port: 49730
+  port: 33330
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -243,7 +243,7 @@ proxies:
 - name: hysteria2_1
   type: hysteria2
   server: 108.181.22.155
-  port: 44141
+  port: 22601
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -251,7 +251,7 @@ proxies:
 - name: hysteria2_2
   type: hysteria2
   server: www.dtku48.xyz
-  port: 49694
+  port: 6829
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -259,7 +259,7 @@ proxies:
 - name: hysteria2_3
   type: hysteria2
   server: 108.181.22.155
-  port: 44141
+  port: 22601
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -273,8 +273,8 @@ proxy-groups:
   - 🔯 故障转移
   - 🔮 负载均衡
   - 🎯 全球直连
-  - meta_hysteria2_01
-  - meta_hysteria_02
+  - meta_hysteria_01
+  - meta_hysteria2_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -299,8 +299,8 @@ proxy-groups:
   - 🔯 故障转移
   - 🔮 负载均衡
   - 🎯 全球直连
-  - meta_hysteria2_01
-  - meta_hysteria_02
+  - meta_hysteria_01
+  - meta_hysteria2_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -323,8 +323,8 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 600
   proxies:
-  - meta_hysteria2_01
-  - meta_hysteria_02
+  - meta_hysteria_01
+  - meta_hysteria2_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -347,8 +347,8 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 600
   proxies:
-  - meta_hysteria2_01
-  - meta_hysteria_02
+  - meta_hysteria_01
+  - meta_hysteria2_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -372,8 +372,8 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 600
   proxies:
-  - meta_hysteria2_01
-  - meta_hysteria_02
+  - meta_hysteria_01
+  - meta_hysteria2_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -468,8 +468,8 @@ proxy-groups:
   - 🔯 故障转移
   - 🔮 负载均衡
   - 🎯 全球直连
-  - meta_hysteria2_01
-  - meta_hysteria_02
+  - meta_hysteria_01
+  - meta_hysteria2_02
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31

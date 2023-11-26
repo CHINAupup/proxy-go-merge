@@ -44,7 +44,7 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: meta_hysteria_02
+- name: meta_hysteria_01
   type: hysteria
   server: 167.160.90.251
   port: 48089
@@ -230,7 +230,7 @@ proxy-groups:
   - 🔯 故障转移
   - 🔮 负载均衡
   - 🎯 全球直连
-  - meta_hysteria_02
+  - meta_hysteria_01
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -251,7 +251,7 @@ proxy-groups:
   - 🔯 故障转移
   - 🔮 负载均衡
   - 🎯 全球直连
-  - meta_hysteria_02
+  - meta_hysteria_01
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -270,7 +270,7 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 600
   proxies:
-  - meta_hysteria_02
+  - meta_hysteria_01
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -289,7 +289,7 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 600
   proxies:
-  - meta_hysteria_02
+  - meta_hysteria_01
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -309,7 +309,7 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 600
   proxies:
-  - meta_hysteria_02
+  - meta_hysteria_01
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
@@ -400,7 +400,7 @@ proxy-groups:
   - 🔯 故障转移
   - 🔮 负载均衡
   - 🎯 全球直连
-  - meta_hysteria_02
+  - meta_hysteria_01
   - meta_tuic_11
   - meta_tuic_21
   - meta_tuic_31
