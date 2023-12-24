@@ -157,17 +157,6 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: meta_hysteria2_82
-  type: hysteria2
-  server: 45.145.72.212
-  port: 23520
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  up: 1 Mbps
-  down: 5 Mbps
-  skip-cert-verify: true
 - name: meta_hysteria_91
   type: hysteria
   server: 62.204.54.81
@@ -279,7 +268,6 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
-  - meta_hysteria2_82
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -305,7 +293,6 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
-  - meta_hysteria2_82
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -329,7 +316,6 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
-  - meta_hysteria2_82
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -353,7 +339,6 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
-  - meta_hysteria2_82
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -378,7 +363,6 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
-  - meta_hysteria2_82
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
@@ -474,7 +458,6 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_tuic_81
-  - meta_hysteria2_82
   - meta_hysteria_91
   - hysteria_0
   - hysteria_1
